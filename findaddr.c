@@ -6,7 +6,7 @@
  * $ ./findaddr <variable>
  * Example : 
  * $ ./findaddr SHELL
- * 
+ * SHELL address: 0x7fff0417d64c
  */
  
 #include <unistd.h>
