@@ -1,7 +1,7 @@
 /*
  * Execute given shellcode
  * Compile :
- * $ gcc -Wall -m32 -Wl,-z,execstack -o shellcode shellcode.c
+ * $ gcc -Wall -m32 -Wl,-z,execstack -o execshellcode execshellcode.c
  * Usage :
  * $ ./execshellcode <shellcode>
  * Example (from http://shell-storm.org/shellcode/files/shellcode-827.php):
