@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <stdio.h>
+#include <stdbool.h>
 
 #define UNKNOWN_BASE 0
 #define BASE_2 2
