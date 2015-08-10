@@ -1,4 +1,6 @@
-# Converter
+# ExecShellcode
+
+Execute given shellcode
 
 ### Version
 1.0.0
