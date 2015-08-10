@@ -1,5 +1,7 @@
 # Miscellaneous
 
+Some random day to day useful stuff I wrote a hundred times. Finally decided to centralize all of this in one place. If you have some code snippets or ideas, feel free to contribute/suggest.
+
 ### Converter
 
 Convert a number from base n to m, with n and m between 2 and 62
