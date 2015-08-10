@@ -1,14 +1,3 @@
-/*
- * Find address of an environment variale
- * Compile :
- * $ gcc -Wall -o findaddr findaddr.c
- * Usage : 
- * $ ./findaddr <variable>
- * Example : 
- * $ ./findaddr SHELL
- * SHELL address: 0x7fff0417d64c
- */
- 
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
