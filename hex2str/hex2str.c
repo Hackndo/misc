@@ -1,19 +1,10 @@
-/*
- * Hex ascii values to string
- * Compile :
- * $ gcc -Wall -o hex2str hex2str.c
- * Usage :
- * $ ./hex2str <hex_string>
- * Example :
- * $ ./hex2str "0x68 0x61 0x63 0x6b 0x6e 0x64 0x6f"
- * hackndo
- */
-
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
 
-
+char *hex2str(char *str);
+int char_count(char *str, char search);
+char *str_replace(char *orig, char *rep, char *with);
 
 int main(int argc, char *argv[]) {
     if (argc != 2) {
