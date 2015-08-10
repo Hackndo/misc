@@ -1,5 +1,5 @@
 all: main.o functions.o
-		gcc main.o functions.o -o bin/converter -lm
+		gcc main.o functions.o -o converter -lm
  
 main.o: main.c functions.h
 		gcc -c main.c -o main.o
