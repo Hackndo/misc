@@ -1,0 +1,191 @@
+00 sys_setup [sys_ni_syscall]
+01 sys_exit
+02 sys_fork
+03 sys_read
+04 sys_write
+05 sys_open
+06 sys_close
+07 sys_waitpid
+08 sys_creat
+09 sys_link
+10 sys_unlink
+11 sys_execve
+12 sys_chdir
+13 sys_time
+14 sys_mknod
+15 sys_chmod
+16 sys_lchown
+17 sys_break [sys_ni_syscall]
+18 sys_oldstat [sys_stat]
+19 sys_lseek
+20 sys_getpid
+21 sys_mount
+22 sys_umount [sys_oldumount]
+23 sys_setuid
+24 sys_getuid
+25 sys_stime
+26 sys_ptrace
+27 sys_alarm
+28 sys_oldfstat [sys_fstat]
+29 sys_pause
+30 sys_utime
+31 sys_stty [sys_ni_syscall]
+32 sys_gtty [sys_ni_syscall]
+33 sys_access
+34 sys_nice
+35 sys_ftime [sys_ni_syscall]
+36 sys_sync
+37 sys_kill
+38 sys_rename
+39 sys_mkdir
+40 sys_rmdir
+41 sys_dup
+42 sys_pipe
+43 sys_times
+44 sys_prof [sys_ni_syscall]
+45 sys_brk
+46 sys_setgid
+47 sys_getgid
+48 sys_signal
+49 sys_geteuid
+50 sys_getegid
+51 sys_acct
+52 sys_umount2 [sys_umount] (2.2+)
+53 sys_lock [sys_ni_syscall]
+54 sys_ioctl
+55 sys_fcntl
+56 sys_mpx [sys_ni_syscall]
+57 sys_setpgid
+58 sys_ulimit [sys_ni_syscall]
+59 sys_oldolduname
+60 sys_umask
+61 sys_chroot
+62 sys_ustat
+63 sys_dup2
+64 sys_getppid
+65 sys_getpgrp
+66 sys_setsid
+67 sys_sigaction
+68 sys_sgetmask
+69 sys_ssetmask
+70 sys_setreuid
+71 sys_setregid
+72 sys_sigsuspend
+73 sys_sigpending
+74 sys_sethostname
+75 sys_setrlimit
+76 sys_getrlimit
+77 sys_getrusage
+78 sys_gettimeofday
+79 sys_settimeofday
+80 sys_getgroups
+81 sys_setgroups
+82 sys_select [old_select]
+83 sys_symlink
+84 sys_oldlstat [sys_lstat]
+85 sys_readlink
+86 sys_uselib
+87 sys_swapon
+88 sys_reboot
+89 sys_readdir [old_readdir]
+90 sys_mmap [old_mmap]
+91 sys_munmap
+92 sys_truncate
+93 sys_ftruncate
+94 sys_fchmod
+95 sys_fchown
+96 sys_getpriority
+97 sys_setpriority
+98 sys_profil [sys_ni_syscall]
+99 sys_statfs
+100 sys_fstatfs
+101 sys_ioperm
+102 sys_socketcall
+103 sys_syslog
+104 sys_setitimer
+105 sys_getitimer
+106 sys_stat [sys_newstat]
+107 sys_lstat [sys_newlstat]
+108 sys_fstat [sys_newfstat]
+109 sys_olduname [sys_uname]
+110 sys_iopl
+111 sys_vhangup
+112 sys_idle
+113 sys_vm86old
+114 sys_wait4
+115 sys_swapoff
+116 sys_sysinfo
+117 sys_ipc
+118 sys_fsync
+119 sys_sigreturn
+120 sys_clone
+121 sys_setdomainname
+122 sys_uname [sys_newuname]
+123 sys_modify_ldt
+124 sys_adjtimex
+125 sys_mprotect
+126 sys_sigprocmask
+127 sys_create_module
+128 sys_init_module
+129 sys_delete_module
+130 sys_get_kernel_syms
+131 sys_quotactl
+132 sys_getpgid
+133 sys_fchdir
+134 sys_bdflush
+135 sys_sysfs
+136 sys_personality
+137 sys_afs_syscall [sys_ni_syscall]
+138 sys_setfsuid
+139 sys_setfsgid
+140 sys__llseek [sys_lseek]
+141 sys_getdents
+142 sys__newselect [sys_select]
+143 sys_flock
+144 sys_msync
+145 sys_readv
+146 sys_writev
+147 sys_getsid
+148 sys_fdatasync
+149 sys__sysctl [sys_sysctl]
+150 sys_mlock
+151 sys_munlock
+152 sys_mlockall
+153 sys_munlockall
+154 sys_sched_setparam
+155 sys_sched_getparam
+156 sys_sched_setscheduler
+157 sys_sched_getscheduler
+158 sys_sched_yield
+159 sys_sched_get_priority_max
+160 sys_sched_get_priority_min
+161 sys_sched_rr_get_interval
+162 sys_nanosleep
+163 sys_mremap
+164 sys_setresuid (2.2+)
+165 sys_getresuid (2.2+)
+166 sys_vm86
+167 sys_query_module (2.2+)
+168 sys_poll (2.2+)
+169 sys_nfsservctl (2.2+)
+170 sys_setresgid (2.2+)
+171 sys_getresgid (2.2+)
+172 sys_prctl (2.2+)
+173 sys_rt_sigreturn (2.2+)
+174 sys_rt_sigaction (2.2+)
+175 sys_rt_sigprocmask (2.2+)
+176 sys_rt_sigpending (2.2+)
+177 sys_rt_sigtimedwait (2.2+)
+178 sys_rt_sigqueueinfo (2.2+)
+179 sys_rt_sigsuspend (2.2+)
+180 sys_pread (2.2+)
+181 sys_pwrite (2.2+)
+182 sys_chown (2.2+)
+183 sys_getcwd (2.2+)
+184 sys_capget (2.2+)
+185 sys_capset (2.2+)
+186 sys_sigaltstack (2.2+)
+187 sys_sendfile (2.2+)
+188 sys_getpmsg [sys_ni_syscall]
+189 sys_putpmsg [sys_ni_syscall]
+190 sys_vfork (2.2+)
