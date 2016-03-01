@@ -3,6 +3,8 @@ List of python tools I wrote
 
 ### Text
 
+Example
+
 ```python
 # French truncated text example from http://blog.hackndo.com/retour-a-la-libc/
 text = Text("Bonjour, nous avons vu dans la série [...])", keep_spaces=False)
@@ -51,17 +53,4 @@ Result
 [*] Most probable key : HACKNDO
 
 BONJOURNOUSAVONSVUDANSLASERIE [...]
-```
-
-### Usage
-
-```sh
-$ ./findaddr <variable>
-```
-
-### Examples
-
-```sh
-$ ./findaddr SHELL
-SHELL address: 0x7fff0417d64c
 ```
