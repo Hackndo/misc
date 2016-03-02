@@ -22,10 +22,15 @@ class Text(object):
 
 # ---------------------------------- PUBLIC ----------------------------------
     
-    # s getter, setter, deleter
+    # s getter, setter
     @property
     def s(self):
         return self._s
+
+
+    @s.setter
+    def s(self, s):
+        self._s = s
 
     # len getter
     @property
@@ -76,7 +81,7 @@ class Text(object):
         print ''.join(self._s)
 
 
-    def get_string(self):
+    def tostring(self):
 
         return ''.join(self._s)
 

@@ -2,23 +2,7 @@ from __future__ import division
 from Cipher import Cipher
 import math
 
-class PolyalphaCipher(Cipher):
-    _key = None
-
-    @property
-    def key(self):
-        return self._key
-    
-    @key.setter
-    def key(self, key):
-        self._key = PolyalphaCipher.clean_string(key)
-
-
-    @key.deleter
-    def key(self):
-        del self._key
-
-
+class VigenereLikeCipher(Cipher):
     def guess_key_length(self, min_len=1, max_len=9, display=False):
         """
         Guess key length based on frequence analysis
@@ -37,7 +21,7 @@ class PolyalphaCipher(Cipher):
                 var = []
                 for k in range(self._len//i):
                     var.append(self._s[k*i + j])
-                text = PolyalphaCipher(''.join(var))
+                text = VigenereLikeCipher(''.join(var))
                 ics.append(text.get_ic())
             total_ic = round(sum(ics)/len(ics),4)
             if total_ic > max_ic:

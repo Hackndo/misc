@@ -1,3 +1,4 @@
+from __future__ import division
 from Text import Text
 class Cipher(Text):
 
