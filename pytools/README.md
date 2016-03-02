@@ -129,15 +129,17 @@ Result
 SALUTLESAMISJESUISPARTIENAM [...]
 ```
 
-### PolybeCipher
+### PolybiusCipher
 
 Example
 
 ```python
 # French truncated text example from http://blog.hackndo.com/retour-a-la-libc/
-p = PolybeCipher("Salut les amis, je suis parti [..]")
-p.key = "hackndo"
+p = PolybiusCipher("Salut les amis, je suis parti [..]")
+p.key = "HACKNDO"
 p.encipher()
+print p.tostring()
+p.decipher()
 print p.tostring()
 ```
 
@@ -150,9 +152,19 @@ Result
     G I J L M
     P Q R S T
     U V X Y Z
-
+    
 [*] Encipher complete
 
-RVITSINRVJERFNRTERMVQSENKVJNQEPTNOTRTO [...]
+SHIUTINSHJESFNSUESPHRTENLHJNREQUNKU [...]
+[*] Keysquare initialized
+    H A C K N
+    D O B E F
+    G I J L M
+    P Q R S T
+    U V X Y Z
+
+[*] Decipher complete
+
+SALUTLESAMISJESUISPARTIENAMERIQUEDUS [...]
 ```
 

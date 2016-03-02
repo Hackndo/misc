@@ -35,8 +35,18 @@ class Substitution(Cipher):
         self.s = [self.__substitute_letter(c) for c in self.s]
 
 
+    def substitute_reverse(self):
+        self.s = [self.__substitute_letter_reverse(c) for c in self.s]
+
+
     def __substitute_letter(self, letter):
         for i in range(len(self.reference_alphabet)):
             if letter == self.reference_alphabet[i]:
                 return self.substitute_alphabet[i]
+        return '?'
+
+    def __substitute_letter_reverse(self, letter):
+        for i in range(len(self.substitute_alphabet)):
+            if letter == self.substitute_alphabet[i]:
+                return self.reference_alphabet[i]
         return '?'
