@@ -107,7 +107,7 @@
 | 114 | sys_wait4 | kernel/exit.c | pid_t | unsigned long * | int options | struct rusage * | - |
 | 115 | sys_swapoff | mm/swapfile.c | const char * | - | - | - | - |
 | 116 | sys_sysinfo | kernel/info.c | struct sysinfo * | - | - | - | - |
-| 117 | sys_ipc (*Note) | arch/i386/kernel/sys_i386.c | uint | int | int | int | void * |
+| 117 | sys_ipc | arch/i386/kernel/sys_i386.c | uint | int | int | int | void * |
 | 118 | sys_fsync | fs/buffer.c | unsigned int | - | - | - | - |
 | 119 | sys_sigreturn | arch/i386/kernel/signal.c | unsigned long | - | - | - | - |
 | 120 | sys_clone | arch/i386/kernel/process.c | struct pt_regs | - | - | - | - |
@@ -178,4 +178,3 @@
 | 186 | sys_sigaltstack | arch/i386/kernel/signal.c | const stack_t * | stack_t * | - | - | - |
 | 187 | sys_sendfile | mm/filemap.c | int | int | off_t * | size_t | - |
 | 190 | sys_vfork | arch/i386/kernel/process.c | struct pt_regs | - | - | - | - |
-</tbody>
