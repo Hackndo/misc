@@ -21,6 +21,7 @@ int main(int argc, char **argv)
     printf("Shellcode Length: %zd\n", strlen(shellcode));
     int (*ret)() = (int(*)())shellcode;
     ret();
+    free(shellcode);
     return 0;
 }
 
@@ -30,6 +31,7 @@ char *hex2str(char *str) {
     long int j = strtol(shellcode, &pEnd, 16);
     char *sc;
     sc = malloc(strlen(shellcode)-char_count(shellcode, ' '));
+    free(shellcode);
     int counter=0;
     while (j != 0) {
        sprintf(sc+counter*sizeof(char), "%c", (int) j);
