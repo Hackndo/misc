@@ -31,13 +31,13 @@ char *hex2str(char *str) {
     long int j = strtol(shellcode, &pEnd, 16);
     char *sc;
     sc = malloc(strlen(shellcode)-char_count(shellcode, ' '));
-    free(shellcode);
     int counter=0;
     while (j != 0) {
        sprintf(sc+counter*sizeof(char), "%c", (int) j);
         counter++;
         j = strtol(pEnd, &pEnd, 16);
     }
+    free(shellcode);
     return sc;
 }
 
