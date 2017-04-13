@@ -2,7 +2,7 @@ import re
 import json
 import configparser as cp
 
-DEBUG = False
+DEBUG = True
 
 class Utils(object):
     """
@@ -152,6 +152,10 @@ class Cipher(object):
                 "ci": True,
                 "chars": ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
             },
+            "32": {
+                "ci": True,
+                "chars": ['2','3','4','5','6','7','a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '=']
+            },
             "36": {
                 "ci": True,
                 "chars": ['0','1','2','3','4','5','6','7','8','9','a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
@@ -189,11 +193,13 @@ def main():
     ciphers = [
         Cipher("019cf44a019cf44a019cf44a019cf44a", spaces=False),
         Cipher("--. .--. ---", spaces=False),
-        Cipher("019cf44a019cf44a019cf44a019cf44a019cf44a019cf44", spaces=False),
+        Cipher("JBSWY3DPEB3W64TMMQ======", spaces=False),
     ]
     for cipher in ciphers:
+        print("\n======= NEW CIPHER ========\n")
+        print(cipher)
         c = Cryde(cipher=cipher, config_file=config_file)
-        print(c.get_possible_algorithms())
+        print("Results : " + str(c.get_possible_algorithms()) + "\n")
     
 
 if __name__ == '__main__':
