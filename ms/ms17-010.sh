@@ -1,4 +1,4 @@
-# Memo commands for MS16-010 scan and exploit
+# Memo commands for MS17-010 scan and exploit
 # Run as root 
 # 
 # "Exploit in Metasploit" section are msfconsole commands. They shouldn't be use in a terminal
