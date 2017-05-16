@@ -1,3 +1,8 @@
+# Memo commands for MS16-010 scan and exploit
+# Run as root 
+# 
+# "Exploit in Metasploit" section are msfconsole commands. They shouldn't be use in a terminal
+
 # Download NSE script
 wget -P /usr/share/nmap/scripts https://raw.githubusercontent.com/cldrn/nmap-nse-scripts/master/scripts/smb-vuln-ms17-010.nse
 
