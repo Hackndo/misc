@@ -19,4 +19,5 @@ wget https://bootstrap.pypa.io/get-pip.py
 sudo python get-pip.py
 sudo pip install docker-compose
 sudo apt-get install git build-essential dkms gcc linux-headers-$(uname -r)
+cd ~
 mkdir docker
