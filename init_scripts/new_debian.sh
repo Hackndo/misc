@@ -1,6 +1,6 @@
 # Part 1
 apt update && apt -y upgrade
-apt install sudo git
+apt install sudo git -y
 useradd -m pixis
 
 # Part 2
