@@ -6,7 +6,6 @@ param (
 
 
 IF($decode) {
-    Write-Host "** Decode Base64 encoded code **"
     IF($inputfile) {
         $Text = get-content $inputfile
     } else {
@@ -14,7 +13,6 @@ IF($decode) {
     }
     $ReturnText = [System.Text.Encoding]::Unicode.GetString([System.Convert]::FromBase64String($Text))
 } else {
-    Write-Host "** Encode plain code **"
     IF($inputfile) {
         $Text = get-content $inputfile
     } else {
