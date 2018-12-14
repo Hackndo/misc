@@ -15,3 +15,4 @@ sudo python get-pip.py
 sudo pip install docker-compose
 cd ~
 mkdir docker
+sudo usermod -aG docker <USERNAME>
